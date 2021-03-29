@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespaceUPLab1
+{
+    public class lakers
+    {
+        public string Name {get;set;}
+        public double Sbasseina{get;set;}
+        public double protiajnost{ get; set; }
+        public lake(string Name, double Sbasseina, double protiajnost)
+        {
+            this.Name = Name;
+            this.Sbasseina = Sbasseina;
+            this.protiajnost = protiajnost;
+        }
+    }
+}
