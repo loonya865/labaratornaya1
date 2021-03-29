@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespaceUPLab1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<lake> lakeList = new List<lake>();
+            while (true)
+            {
+                {
+                    Console.WriteLine("Введите имя реки: ");
+                    string Name = Console.ReadLine();
+                    Console.WriteLine("Введите площадь бассейна: ");
+                    double Sbasseina = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Введите протяженность реки: ");
+                    double protiajnost = Convert.ToInt32(Console.ReadLine());
+                    lakeList.Add(new lake(Name, Sbasseina, protiajnost));
+                    Console.Clear();
+
+                    for (int i = 0; i < lakeList.Count; i++)
+                    {
+                        Console.WriteLine("Имя реки: " + lakeList[i].Name + " S бассеина: " + lakeList[i].Sbasseina + " Протяженность реки: " + lakeList[i].protiajnost);
+                    }
+                }
+            }
+        }
+    }
